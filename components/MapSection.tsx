@@ -86,6 +86,15 @@ const allSpots: Spot[] = [
   { id: '30', name: '淡路島おむすび結結', category: 'restaurant', description: 'ふっくらとした淡路島おにぎり。', imageUrl: 'https://picsum.photos/id/211/400/300', petFriendly: false, location: { lat: 34.2582083, lng: 134.7205345 } },
   { id: '31', name: '海鮮料理 秀丸', category: 'restaurant', description: '新鮮な海鮮丼などが楽しめる。', imageUrl: 'https://picsum.photos/id/212/400/300', petFriendly: false, location: { lat: 34.2574963, lng: 134.7201547 } },
   { id: '32', name: '活魚料理 沖', category: 'restaurant', description: '活きのいい魚料理を提供。', imageUrl: 'https://picsum.photos/id/213/400/300', petFriendly: false, location: { lat: 34.257475, lng: 134.720193 } },
+  // Additional User Spots
+  { id: '33', name: 'なるみキッチン＆カフェ', category: 'restaurant', description: 'カジュアルに和食を楽しめるお店。', imageUrl: 'https://picsum.photos/id/214/400/300', petFriendly: false, location: { lat: 34.288289, lng: 134.789239 } },
+  { id: '34', name: '心鮮料理 万代', category: 'restaurant', description: '新鮮な魚介料理が自慢。', imageUrl: 'https://picsum.photos/id/215/400/300', petFriendly: false, location: { lat: 34.257887, lng: 134.723036 } },
+  { id: '35', name: '小家の梵', category: 'restaurant', description: '焼き鳥が美味しい居酒屋。', imageUrl: 'https://picsum.photos/id/216/400/300', petFriendly: false, location: { lat: 34.2565498, lng: 134.7229201 } },
+  { id: '36', name: '味処 とっくり', category: 'restaurant', description: '地元で人気の和風居酒屋。', imageUrl: 'https://picsum.photos/id/217/400/300', petFriendly: false, location: { lat: 34.2563543, lng: 134.7227722 } },
+  { id: '37', name: '清中', category: 'restaurant', description: '新鮮なネタが揃う寿司店。', imageUrl: 'https://picsum.photos/id/218/400/300', petFriendly: false, location: { lat: 34.2552683, lng: 134.7232015 } },
+  { id: '38', name: '三富', category: 'restaurant', description: '地元の食材を使った料理店。', imageUrl: 'https://picsum.photos/id/219/400/300', petFriendly: false, location: { lat: 34.271758, lng: 134.7403622 } },
+  { id: '39', name: 'タヴェールナ ガットリベロ', category: 'restaurant', description: '本格的なイタリアンレストラン。', imageUrl: 'https://picsum.photos/id/220/400/300', petFriendly: false, location: { lat: 34.2694754, lng: 134.753792 } },
+  { id: '40', name: '地魚･地野菜 旬', category: 'restaurant', description: '旬の地魚と野菜を味わえる和食店。', imageUrl: 'https://picsum.photos/id/221/400/300', petFriendly: false, location: { lat: 34.2713325, lng: 134.758215 } },
 ];
 
 const MapSection: React.FC = () => {
