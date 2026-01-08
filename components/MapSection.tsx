@@ -68,6 +68,24 @@ const allSpots: Spot[] = [
   { id: '7', name: 'おのころ島神社', category: 'sightseeing', description: '高さ21.7mの大鳥居は必見。', imageUrl: 'https://picsum.photos/id/1040/400/300', petFriendly: true, location: { lat: 34.3015, lng: 134.7938 } },
   { id: '8', name: '淡路人形座', category: 'sightseeing', description: '500年の歴史を誇る淡路人形浄瑠璃。', imageUrl: 'https://picsum.photos/id/1045/400/300', petFriendly: false, location: { lat: 34.2405, lng: 134.7188 } },
   { id: '9', name: 'じゃのひれアウトドアリゾート', category: 'sightseeing', description: 'イルカと触れ合える貴重なスポット。', imageUrl: 'https://picsum.photos/id/1050/400/300', petFriendly: true, location: { lat: 34.2355, lng: 134.6853 } },
+  { id: '10', name: '諭鶴羽神社', category: 'sightseeing', description: '淡路島最高峰、標高608mに鎮座する修験道の聖地。パワースポットとして有名。', imageUrl: 'https://images.unsplash.com/photo-1624891461427-1481c4ee8001?auto=format&fit=crop&q=80&w=400', petFriendly: true, location: { lat: 34.2346, lng: 134.8145 } },
+  { id: '11', name: '沼島', category: 'sightseeing', description: '国生み神話ゆかりの島。「上立神岩」はハート型に見えると話題。', imageUrl: 'https://images.unsplash.com/photo-1549448893-68f7f57321e0?auto=format&fit=crop&q=80&w=400', petFriendly: true, location: { lat: 34.1720, lng: 134.8190 } },
+  { id: '12', name: '淡路島モンキーセンター', category: 'sightseeing', description: '野生のニホンザル約350頭と触れ合える。仲の良いサルたちに癒やされます。', imageUrl: 'https://images.unsplash.com/photo-1543152632-42777421cb83?auto=format&fit=crop&q=80&w=400', petFriendly: false, location: { lat: 34.2451, lng: 134.8833 } },
+  // User Added Spots
+  { id: '19', name: '鼓亭', category: 'restaurant', description: '淡路島の手打ちうどんの名店。', imageUrl: 'https://picsum.photos/id/200/400/300', petFriendly: false, location: { lat: 34.2579689, lng: 134.7210083 } },
+  { id: '20', name: 'Giro d\' Awaji', category: 'restaurant', description: '焙煎工房&淡路牛バール。', imageUrl: 'https://picsum.photos/id/201/400/300', petFriendly: false, location: { lat: 34.2567098, lng: 134.7212335 } },
+  { id: '21', name: '2965 Awajishima', category: 'restaurant', description: '南あわじのレストラン。', imageUrl: 'https://picsum.photos/id/202/400/300', petFriendly: false, location: { lat: 34.2555873, lng: 134.7222894 } },
+  { id: '22', name: '野菜酒場なみなみ', category: 'restaurant', description: '淡路島の野菜を楽しめる居酒屋。', imageUrl: 'https://picsum.photos/id/203/400/300', petFriendly: false, location: { lat: 34.2547688, lng: 134.7046047 } },
+  { id: '23', name: 'ひらまつ食堂', category: 'restaurant', description: '地元の魚介を使った海鮮料理。', imageUrl: 'https://picsum.photos/id/204/400/300', petFriendly: false, location: { lat: 34.2524827, lng: 134.7086303 } },
+  { id: '24', name: 'オンズ', category: 'restaurant', description: 'くつろげる居酒屋ダイナー。', imageUrl: 'https://picsum.photos/id/205/400/300', petFriendly: false, location: { lat: 34.255458, lng: 134.712982 } },
+  { id: '25', name: 'まりも', category: 'restaurant', description: 'ラーメンとお好み焼きの人気店。', imageUrl: 'https://picsum.photos/id/206/400/300', petFriendly: false, location: { lat: 34.2578884, lng: 134.7161151 } },
+  { id: '26', name: 'あや (居酒屋)', category: 'restaurant', description: 'アットホームな居酒屋。', imageUrl: 'https://picsum.photos/id/207/400/300', petFriendly: false, location: { lat: 34.257794, lng: 134.717857 } },
+  { id: '27', name: 'GURUDOG infinity', category: 'restaurant', description: '淡路島ホットドッグとバー。', imageUrl: 'https://picsum.photos/id/208/400/300', petFriendly: false, location: { lat: 34.2568412, lng: 134.7194611 } },
+  { id: '28', name: 'B&T Viet Cafe', category: 'restaurant', description: '本格的なベトナム料理カフェ。', imageUrl: 'https://picsum.photos/id/209/400/300', petFriendly: false, location: { lat: 34.256791, lng: 134.7193333 } },
+  { id: '29', name: 'ぐりるエイト', category: 'restaurant', description: '鉄板焼ステーキ&シーフード。', imageUrl: 'https://picsum.photos/id/210/400/300', petFriendly: false, location: { lat: 34.2580064, lng: 134.7199986 } },
+  { id: '30', name: '淡路島おむすび結結', category: 'restaurant', description: 'ふっくらとした淡路島おにぎり。', imageUrl: 'https://picsum.photos/id/211/400/300', petFriendly: false, location: { lat: 34.2582083, lng: 134.7205345 } },
+  { id: '31', name: '海鮮料理 秀丸', category: 'restaurant', description: '新鮮な海鮮丼などが楽しめる。', imageUrl: 'https://picsum.photos/id/212/400/300', petFriendly: false, location: { lat: 34.2574963, lng: 134.7201547 } },
+  { id: '32', name: '活魚料理 沖', category: 'restaurant', description: '活きのいい魚料理を提供。', imageUrl: 'https://picsum.photos/id/213/400/300', petFriendly: false, location: { lat: 34.257475, lng: 134.720193 } },
 ];
 
 const MapSection: React.FC = () => {
