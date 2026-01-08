@@ -1,0 +1,7 @@
+{
+  "name": "Minami-Awaji Travel & Pet Care Portal",
+  "description": "A comprehensive tourism portal for Minami-Awaji City featuring an AI-powered travel concierge and integrated pet hotel services for tourists.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
