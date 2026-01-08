@@ -12,7 +12,7 @@ const mockSpots: Spot[] = [
   { id: '2', name: '慶野松原', category: 'sightseeing', description: '約2.5km続く松原は圧巻。キャンプ場や海水浴場もあり, 散策に最適。', imageUrl: 'https://picsum.photos/id/1015/500/350', petFriendly: true, location: { lat: 34.34, lng: 134.74 }, link: 'https://www.city.minamiawaji.hyogo.jp/soshiki/shoukou/keinomatsubara.html' },
   { id: '3', name: '淡路ファームパーク イングランドの丘', category: 'sightseeing', description: 'コアラに会える農業公園。ペット同伴ルールについては要確認。', imageUrl: 'https://picsum.photos/id/1020/500/350', petFriendly: false, location: { lat: 34.32, lng: 134.82 }, link: 'https://www.england-hill.com/' },
   { id: '4', name: 'うずの丘 大鳴門橋記念館', category: 'sightseeing', description: '「たまねぎキャッチャー」で有名な複合施設。絶景レストランも。', imageUrl: 'https://picsum.photos/id/1025/500/350', petFriendly: true, location: { lat: 34.26, lng: 134.72 }, link: 'https://uzunokuni.com/' },
-  { id: '5', name: '南あわじ温泉郷', category: 'accommodation', description: '鳴門海峡を望む温泉地。泉質豊かな数々の旅館が並びます。', imageUrl: 'https://picsum.photos/id/1030/500/350', petFriendly: false, location: { lat: 34.25, lng: 134.71 }, link: 'https://www.minamiawaji-onsen.com/' },
+  { id: '5', name: '南あわじ温泉郷', category: 'accommodation', description: '鳴門海峡を望む温泉地。泉質豊かな数々の旅館が並びます。', imageUrl: 'https://picsum.photos/id/1030/500/350', petFriendly: false, location: { lat: 34.25, lng: 134.71 }, link: 'http://minamiawaji-onsen.com/' },
   { id: '6', name: '道の駅 うずしお', category: 'restaurant', description: 'あわじ島バーガーなど, 地元グルメの宝庫。大鳴門橋が目の前。', imageUrl: 'https://picsum.photos/id/1035/500/350', petFriendly: true, location: { lat: 34.24, lng: 134.69 }, link: 'https://eki.uzunokuni.com/' },
 
   // New

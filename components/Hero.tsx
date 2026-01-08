@@ -99,7 +99,7 @@ const Hero: React.FC<{ onExplore: () => void }> = ({ onExplore }) => {
             <HeroSpotInfo
               title="鳴門の渦潮"
               desc="世界最大級、直径20mに達する大迫力の自然現象を間近で体感。"
-              link="https://www.uzushio-cruise.com/"
+              link="https://www.uzusio.com/"
             />
             <HeroSpotInfo
               title="慶野松原"
