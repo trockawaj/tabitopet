@@ -94,10 +94,6 @@ const MapSection: React.FC = () => {
       {/* Sidebar List */}
       <div className="w-full md:w-[400px] bg-white border-r border-slate-200 flex flex-col h-2/5 md:h-full shadow-2xl z-10">
         <div className="p-6 border-b border-slate-100 bg-slate-50/50">
-          <h2 className="text-2xl font-black mb-6 flex items-center gap-3">
-            <i className="fas fa-search-location text-orange-600"></i>
-            スポットを探す
-          </h2>
           <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
             {['all', 'sightseeing', 'accommodation', 'restaurant'].map(cat => (
               <FilterBtn
