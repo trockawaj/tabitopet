@@ -62,7 +62,7 @@ const allSpots: Spot[] = [
   { id: '1', name: 'うずしおクルーズ', category: 'sightseeing', description: '世界最大の渦潮を間近で体感。観潮船「日本丸」「咸臨丸」で迫力の渦潮を。', imageUrl: 'https://picsum.photos/id/1011/400/300', petFriendly: false, location: { lat: 34.2407, lng: 134.7171 } },
   { id: '2', name: '慶野松原', category: 'sightseeing', description: '日本の夕陽百選にも選ばれた松林と砂浜。', imageUrl: 'https://picsum.photos/id/1015/400/300', petFriendly: true, location: { lat: 34.3315, lng: 134.7397 } },
   { id: '3', name: '淡路島牧場', category: 'sightseeing', description: '乳搾り体験や新鮮なソフトクリームを。', imageUrl: 'https://picsum.photos/id/1020/400/300', petFriendly: true, location: { lat: 34.3129, lng: 134.7877 } },
-  { id: '4', name: 'うずの丘 大鳴門橋記念館', category: 'sightseeing', description: '「たまねぎキャッチャー」で有名な複合施設。', imageUrl: 'https://picsum.photos/id/1025/400/300', petFriendly: true, location: { lat: 34.2508, lng: 134.7115 } },
+  { id: '4', name: 'うずの丘 大鳴門橋記念館', category: 'sightseeing', description: '「たまねぎキャッチャー」で有名な複合施設。', imageUrl: 'https://loremflickr.com/400/300/onion,bridge', petFriendly: true, location: { lat: 34.2547535, lng: 134.6846892 } },
   { id: '5', name: '南あわじ温泉郷', category: 'accommodation', description: '鳴門海峡を望む温泉地。', imageUrl: 'https://picsum.photos/id/1030/400/300', petFriendly: false, location: { lat: 34.2435, lng: 134.7228 } },
   { id: '6', name: '道の駅 うずしお', category: 'restaurant', description: 'あわじ島バーガーなど, 地元グルメの宝庫。', imageUrl: 'https://picsum.photos/id/1035/400/300', petFriendly: true, location: { lat: 34.2370, lng: 134.6975 } },
   { id: '7', name: 'おのころ島神社', category: 'sightseeing', description: '高さ21.7mの大鳥居は必見。', imageUrl: 'https://picsum.photos/id/1040/400/300', petFriendly: true, location: { lat: 34.3015, lng: 134.7938 } },
@@ -127,6 +127,14 @@ const allSpots: Spot[] = [
   { id: '62', name: 'KARIKO RESORT ベーカリーカフェ ミサキ', category: 'restaurant', description: '絶景を楽しめるベーカリーカフェ。', imageUrl: 'https://loremflickr.com/400/300/bakery,cafe', petFriendly: true, location: { lat: 34.329753, lng: 134.6866047 } },
   { id: '63', name: 'cafe SPARK', category: 'restaurant', description: 'サイクリストにも人気のカフェ。', imageUrl: 'https://loremflickr.com/400/300/bicycle,cafe', petFriendly: false, location: { lat: 34.3341899, lng: 134.7331789 } },
   { id: '64', name: '小料理 なかお', category: 'restaurant', description: '丁寧に作られた小料理を味わえる。', imageUrl: 'https://loremflickr.com/400/300/cooking,japanesefood', petFriendly: false, location: { lat: 34.3012032, lng: 134.7661422 } },
+  // Batch 4 User Spots
+  { id: '65', name: '若人の広場公園', category: 'sightseeing', description: '戦没学徒を追悼する公園。建築家・丹下健三氏の設計。', imageUrl: 'https://loremflickr.com/400/300/park,monument', petFriendly: true, location: { lat: 34.2334032, lng: 134.7120699 } },
+  { id: '66', name: '淡路島 トトロ', category: 'sightseeing', description: 'まるでトトロのような形をした木。フォトスポットとして人気。', imageUrl: 'https://loremflickr.com/400/300/tree,nature', petFriendly: true, location: { lat: 34.2395639, lng: 134.7110889 } },
+  { id: '67', name: '緑の道しるべ 阿那賀公園', category: 'sightseeing', description: '海沿いの美しい公園。散歩や休憩に最適。', imageUrl: 'https://loremflickr.com/400/300/park,sea', petFriendly: true, location: { lat: 34.2827809, lng: 134.6618133 } },
+  { id: '68', name: '養宜館跡', category: 'sightseeing', description: '淡路島の歴史を感じる館跡。', imageUrl: 'https://loremflickr.com/400/300/ruins,history', petFriendly: true, location: { lat: 34.3051789, lng: 134.7951258 } },
+  { id: '69', name: '叶堂城跡', category: 'sightseeing', description: '室町時代の山城跡。眺望が良い。', imageUrl: 'https://loremflickr.com/400/300/castle,ruins', petFriendly: true, location: { lat: 34.3275595, lng: 134.7333415 } },
+  { id: '70', name: '慶野松原プロポーズ街道', category: 'sightseeing', description: '夕陽が美しいロマンチックな散歩道。恋人たちの聖地。', imageUrl: 'https://loremflickr.com/400/300/sunset,road', petFriendly: true, location: { lat: 34.3392707, lng: 134.7356946 } },
+  { id: '71', name: '慶野公園', category: 'sightseeing', description: '慶野松原に隣接する公園。松林と海を楽しめる。', imageUrl: 'https://loremflickr.com/400/300/park,pine', petFriendly: true, location: { lat: 34.3481569, lng: 134.7404489 } },
 ];
 
 const MapSection: React.FC = () => {
