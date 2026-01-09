@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from 'react';
 
 interface HeaderProps {
-  activeTab: 'home' | 'map' | 'sns' | 'hotel' | 'ai' | 'spots';
-  setActiveTab: (tab: 'home' | 'map' | 'sns' | 'hotel' | 'ai' | 'spots') => void;
+  activeTab: 'home' | 'sns' | 'ai';
+  setActiveTab: (tab: 'home' | 'sns' | 'ai') => void;
 }
 
 const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab }) => {
@@ -20,10 +20,7 @@ const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab }) => {
 
   const navItems = [
     { id: 'home', label: 'Home', icon: 'fa-home' },
-    { id: 'spots', label: 'Spots', icon: 'fa-map-marker-alt' },
-    { id: 'map', label: 'Map', icon: 'fa-map' },
     { id: 'sns', label: 'SNS', icon: 'fa-hashtag' },
-    { id: 'hotel', label: 'Pet Hotel', icon: 'fa-paw' },
     { id: 'ai', label: 'AI Concierge', icon: 'fa-robot' },
   ];
 

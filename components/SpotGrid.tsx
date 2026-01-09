@@ -6,7 +6,7 @@ interface SpotGridProps {
   limit?: number;
 }
 
-const mockSpots: Spot[] = [
+export const mockSpots: Spot[] = [
   // Existing
   { id: '1', name: 'うずしおクルーズ', category: 'sightseeing', description: '世界最大の渦潮を間近で体感。観潮船「日本丸」「咸臨丸」で迫力の渦潮を。', imageUrl: 'https://picsum.photos/id/1011/500/350', petFriendly: false, location: { lat: 34.25, lng: 134.7 }, link: 'https://www.uzushio-cruise.com/' },
   { id: '2', name: '慶野松原', category: 'sightseeing', description: '約2.5km続く松原は圧巻。キャンプ場や海水浴場もあり, 散策に最適。', imageUrl: 'https://picsum.photos/id/1015/500/350', petFriendly: true, location: { lat: 34.34, lng: 134.74 }, link: 'https://www.city.minamiawaji.hyogo.jp/soshiki/shoukou/keinomatsubara.html' },
@@ -162,19 +162,22 @@ const mockSpots: Spot[] = [
   { id: '143', name: 'ヴィラオルティージャ', category: 'accommodation', description: 'イタリアンテイストのヴィラ。', imageUrl: 'https://loremflickr.com/500/350/italian,villa', petFriendly: false, location: { lat: 34.3485563, lng: 134.7398462 }, link: 'https://www.google.com/maps/place/%E3%83%B4%E3%82%A3%E3%83%A9%E3%82%AA%E3%83%AB%E3%83%86%E3%82%A3%E3%83%BC%E3%82%B8%E3%83%A3/@34.3394343,134.7250605,15z/data=!4m12!1m2!2m1!1z5a6_5rOK5pa96Kit!3m8!1s0x3554a3b2e2dca029:0xa4b4045e39afd8af!5m2!4m1!1i2!8m2!3d34.3485563!4d134.7398462!16s%2Fg%2F11bw2fj2jd?entry=ttu&g_ep=EgoyMDI2MDEwNi4wIKXMDSoASAFQAw%3D%3D' },
 ];
 
-const SpotGrid: React.FC<SpotGridProps> = ({ limit }) => {
+const SpotGrid: React.FC<SpotGridProps & { spots?: Spot[] }> = ({ limit, spots }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 9;
+
+  // Use passed spots or default to all mockSpots
+  const sourceSpots = spots || mockSpots;
 
   // If limit is set, we just show the first N items (Home page mode)
   // If limit is NOT set, we handle pagination (Spots page mode)
 
-  const totalItems = mockSpots.length;
+  const totalItems = sourceSpots.length;
   const totalPages = Math.ceil(totalItems / itemsPerPage);
 
   const displaySpots = limit
-    ? mockSpots.slice(0, limit)
-    : mockSpots.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+    ? sourceSpots.slice(0, limit)
+    : sourceSpots.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
